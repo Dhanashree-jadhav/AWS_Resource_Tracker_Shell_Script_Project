@@ -1,47 +1,59 @@
-📌 Project Name
+# 📌 Project Name
 
 AWS Resource Tracker Shell Script
 
-📖 Project Description
+---
 
-The AWS Resource Tracker Shell Script is a simple Bash-based automation project designed to track and list basic AWS resources directly from the command line.
+## 📖 Project Description
 
-It uses the AWS CLI along with jq to fetch and display information about key AWS services such as:
+The **AWS Resource Tracker Shell Script** is a Bash-based automation project that helps track and list commonly used AWS resources from the command line.
 
-Amazon S3 Buckets
+It uses the **AWS CLI** along with **jq** to retrieve and display structured information about various AWS services.
 
-Amazon EC2 Instances
+### AWS Services Covered
 
-AWS Lambda Functions
+- Amazon S3 Buckets  
+- Amazon EC2 Instances  
+- AWS Lambda Functions  
+- *(Extendable to IAM Users and additional AWS resources)*  
 
-(Extendable to IAM Users and additional AWS resources)
+This project is ideal for **beginners in DevOps and Cloud Computing**, as it demonstrates how shell scripting can be combined with AWS services for **automation, monitoring, and resource visibility**.
 
-This project is especially useful for beginners in DevOps and Cloud Computing, as it demonstrates how shell scripting can be effectively combined with AWS services for automation, monitoring, and resource visibility.
+---
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
-Bash Shell Scripting
+- Bash Shell Scripting  
+- AWS CLI  
+- jq (JSON Parser)  
+- Linux / WSL / macOS Terminal  
 
-AWS CLI
+---
 
-jq (JSON Parser)
-
-Linux / WSL / macOS Terminal
-
-📂 Project Structure
+## 📂 Project Structure
 AWS_Resource_Tracker/
 │
-├── aws_rsc_tracker.sh   # Main shell script
-└── README.md            # Project documentation
+├── aws_rsc_tracker.sh
+└── README.md
 
-📜 Script Overview
+
+---
+
+## 📜 Script Overview
 
 The script performs the following actions:
 
-Enables debug mode using set -x
+- Enables debug mode using `set -x` to trace command execution  
+- Lists all Amazon S3 buckets in the AWS account  
+- Fetches and displays EC2 Instance IDs  
+- Lists all AWS Lambda functions  
 
-Lists all Amazon S3 buckets in the AWS account
+---
 
-Fetches and prints EC2 Instance IDs
+## ⚙️ Prerequisites
 
-Lists all AWS Lambda functions
+Before running the script, ensure the following tools are installed and configured:
+
+### 1. AWS CLI Installed
+```bash
+aws --version
