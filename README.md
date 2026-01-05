@@ -50,10 +50,4 @@ The script performs the following actions:
 
 ---
 
-## ⚙️ Prerequisites
 
-Before running the script, ensure the following tools are installed and configured:
-
-### 1. AWS CLI Installed
-```bash
-aws --version
